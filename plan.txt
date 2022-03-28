@@ -1,0 +1,9 @@
+<App />
+    <Main /> - list
+        <Header />
+            title - countriesNum
+            <Search />
+        <CountriesList />
+            <Country />
+                country details
+<Footer />                
