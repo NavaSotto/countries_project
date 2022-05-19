@@ -1,11 +1,18 @@
 import { useState, createContext } from "react";
 import React, { useEffect } from 'react';
 import axios from 'axios';
+import Temperature from "./Weather/Temperature/Temperature";
+import { PopupContext } from "../App";
+import { useContext } from "react";
+
+
 
 
 
 
 export default function Location() {
+  const [popup, setPopup] = useContext(PopupContext); //set popup context
+
 
   //-----------for circle text----------------
 
@@ -49,6 +56,10 @@ export default function Location() {
     }
   }))
 }
+function openCurrentWeather()
+{
+<Temperature/>
+}
 
 
 
@@ -67,7 +78,7 @@ export default function Location() {
           </span>
         ))}
       </h5>
-      <img className="globe" data-src="https://whatismycountry.com/i/logo64.png"  onMouseLeave={() => setShowCountry(!showCountry)}   onMouseOver={() => setShowCountry(!showCountry)} width="64" height="64" alt="Find out which country you are in" title="Find out which country you are in"  src="https://whatismycountry.com/i/logo64.png"></img>
+      <img className="globe" data-src="https://whatismycountry.com/i/logo64.png" onClick={() => setPopup(<Temperature />)} onMouseLeave={() => setShowCountry(!showCountry)}   onMouseOver={() => setShowCountry(!showCountry)} width="64" height="64" alt="Find out which country you are in" title="Find out which country you are in"  src="https://whatismycountry.com/i/logo64.png"></img>
     </div>
   );
 }

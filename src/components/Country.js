@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { PopupContext } from "../App";
+import Temperature from "./Weather/Temperature/Temperature";
 
 export default function Country(props) {
   const [popup, setPopup] = useContext(PopupContext); //set popup context
@@ -19,6 +20,7 @@ export default function Country(props) {
 function CountryOpen(props) {
   const { name = {}, flags = {}, languages = {}, population } = props;
 
+
   return (
     <div className="countryOpen">
       <h2>{name.common}</h2>
@@ -26,11 +28,7 @@ function CountryOpen(props) {
       <h4>Population: </h4>
       <span>{population}</span>
       <h4>Languages:</h4>
-      <ul className="langList">
-        {Object.values(languages).map((l) => (
-          <div key={l}>{l}</div>
-        ))}
-      </ul>
+      <div>{Object.values(languages).join(" , ")}</div>
     </div>
   );
 }
