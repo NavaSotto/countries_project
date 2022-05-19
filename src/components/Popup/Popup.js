@@ -1,5 +1,6 @@
 import { useContext } from "react";
-import { PopupContext } from "../App";
+import { PopupContext } from "../../App";
+import './style.css'
 
 export default function Popup() {
 
@@ -20,3 +21,4 @@ export default function Popup() {
         <div className='popup'>{popup}</div>
     </div>;
 }
+

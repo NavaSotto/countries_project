@@ -1,6 +1,6 @@
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Popup from "./components/Popup";
+import Popup from "./components/Popup/Popup";
 import { createContext, useState } from "react";
 import Temperature from "./components/Weather/Temperature/Temperature"
 import Error from "./components/Weather/Error/Error";
