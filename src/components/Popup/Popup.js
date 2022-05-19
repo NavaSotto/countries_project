@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { PopupContext } from "../../App";
-import './style.css'
+import './style.css';
 
 export default function Popup() {
 
@@ -15,9 +15,7 @@ export default function Popup() {
     }
     return <div
         className={`overlay ${popup ? '' : 'close'}`}
-        // onClick={() => setPopup('')}>
         onClick={handleClick}>
-
         <div className='popup'>{popup}</div>
     </div>;
 }

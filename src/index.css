@@ -27,6 +27,18 @@ body {
   margin: 0 auto;
 }
 
+.blurdClass {
+    width:100%;
+    height:100%;
+    background-size:cover;
+    -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -116,6 +128,8 @@ li label {
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(5px);
+
 }
 
 .overlay.close {

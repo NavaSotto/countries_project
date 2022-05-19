@@ -13,7 +13,7 @@ function App() {
 
   return (
 
-    <div className="App">
+    <div className={`App`}>
       {/* //An area in which popupState is recognized */}
       <PopupContext.Provider value={popupState}>
         <Main />

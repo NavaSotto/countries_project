@@ -118,29 +118,14 @@ export default function Temperature() {
 
 
     return (<div className='weather-panel '>
-       
-
-                {/* <PlacesAutocomplete /> */}
-            <div className='flexClass'>
+                   <div className='flexClass'>
                 <h2>we are in</h2>
                 <Location location={currentData.location} />
                 <TimeAndDate timeAndDate={currentData.timeAndDate} />
-                {/* <div className='flexClassRow'> */}
                 <Icon tempNum={currentData.temp}  />
                 <Temp tempNum={currentData.temp} />
 
-                {/* <Coordinates coord={currentData.coordinates} /> */}
-
-                {/* </div> */}
-
-                {/* <button onClick={() => saveInLocalStorage('weatherData', currentData)}>save</button> */}
-            
-
-
-
-
-
-
+               
         </div>
 
 

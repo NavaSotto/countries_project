@@ -24,14 +24,15 @@ export default function Main() {
   );
 
   return (
-    <main>
-       <SearchContext.Provider value={setSearchValue}>
-         <div className="headerClass">
-         <Header countriesNum={filteredList.length} />
+    <main >
 
-         </div>
+      <SearchContext.Provider value={setSearchValue}>
+        <div className="headerClass">
+          <Header countriesNum={filteredList.length} />
+
+        </div>
       </SearchContext.Provider>
-     
+
       <CountriesList list={filteredList} />
     </main>
   );
