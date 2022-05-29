@@ -1,8 +1,8 @@
 
-# A platform for practicing code in different programming languages.
+# A trip around the world
 
-	The exercises contain explanations, solutions and allow you to reach the level of a master.
-	End-to-end development, includes user management system where the Admin user can edit an exercise and registered users can view solutions.
+A site where you can travel the world and get information about any country you choose.
+You can also watch the current weather updated depending on your location.
 
 
 
